@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="planet-outline"></ion-icon>
+                        </span>
+                        <span class="title"><h1>PHARMA+</h1></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="ban-outline"></ion-icon>
+                        </span>
+                        <span class="title">medicaments</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="stock.htm">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">stock overview</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="statistic.htm">
+                        <span class="icon">
+                            <ion-icon name="trending-up-outline"></ion-icon>
+                        </span>
+                        <span class="title">statistics</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="predection.htm">
+                        <span class="icon">
+                            <ion-icon name="bar-chart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Predections</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="about.htm">
+                        <span class="icon">
+                            <ion-icon name="bulb-outline"></ion-icon>
+                        </span>
+                        <span class="title">About</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.htm">
+                        <span class="icon">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </span>
+                        <span class="title">Contacts</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="caret-back-circle-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <ion-icon name="person-add-outline"></ion-icon>
+                </div>
+            </div>
+
+
+            <div class="stock-container">
+                <h2>Pharmacy Stock</h2>
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                            <th>Medication</th>
+                            <th>Quantity in Stock</th>
+                            <th>Quantity Consumed</th>
+                            <th>Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>150</td>
+                            <td>20</td>
+                            <td>Tablets</td>
+                        </tr>
+                        <tr>
+                            <td>Amoxicillin</td>
+                            <td>75</td>
+                            <td>10</td>
+                            <td>Capsules</td>
+                        </tr>
+                        <tr>
+                            <td>Ibuprofen</td>
+                            <td>200</td>
+                            <td>30</td>
+                            <td>Tablets</td>
+                        </tr>
+                        <tr>
+                            <td>Metformin</td>
+                            <td>50</td>
+                            <td>5</td>
+                            <td>Tablets</td>
+                        </tr>
+                        <tr>
+                            <td>Lisinopril</td>
+                            <td>120</td>
+                            <td>15</td>
+                            <td>Tablets</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        
+            <!-- Div to Send an Order -->
+            <div id="order" class="order-form">
+                <h3>Send Order</h3>
+                <form>
+                    <label for="medication">Medication:</label>
+                    <input type="text" id="medication" name="medication" required>
+    
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+    
+                    <button type="submit">Send Order</button>
+                </form>
+            </div>
+        </div>
+    
+       
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
